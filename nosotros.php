@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +15,19 @@
                 <a href="/">
                     <img src="build/img/logo.svg" alt="Logo Bienes Raices">
                 </a>               
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="icono menu reponsive">
+                </div>
+
+                <div class="derecha">
+                    <img src="build/img/dark-mode.svg" alt="" class="dark-mode-boton">
+                    <nav class="navegacion">
+                        <a href="nosotros.php">Nosotros</a>
+                        <a href="anuncios.php">Anuncios</a>
+                        <a href="blog.php">Blog</a>
+                        <a href="contacto.php">Contacto</a>
+                    </nav>
+                </div>
             </div> <!-- cierre de barra -->
             
         </div>
@@ -73,10 +81,10 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="anuncios.php">Anuncios</a>
+                <a href="blog.php">Blog</a>
+                <a href="contacto.php">Contacto</a>
             </nav>
         </div>
         <p class="copyright">Todos los derechos Reservados 2023 &copy; </p>
