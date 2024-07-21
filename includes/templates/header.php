@@ -1,19 +1,26 @@
+
+<?php
+if (!isset($inicio)) {
+    $inicio = false;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="/bienesraices/build/css/app.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header <?php echo $inicio ? 'inicio' : ' '; ?>">
         <div class="contenedor contenido-header">
 
             <div class="barra">
-                <a href="/">
+                <a href="/bienesraices/index.php">
                     <img src="build/img/logo.svg" alt="Logo Bienes Raices">
-                </a>               
+                </a>  
+                
                 <div class="mobile-menu">
                     <img src="build/img/barras.svg" alt="icono menu reponsive">
                 </div>
@@ -28,26 +35,11 @@
                     </nav>
                 </div>
             </div> <!-- cierre de barra -->
-           
+
+            <?php if($inicio){ ?>
+                <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+
+               <?php } ?>
+            
         </div>
     </header>
-    
-    <main class="contenedor seccion">
-        <h1>Titulo Pagina</h1>
-    </main>
-
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.php">Nostros</a>
-                <a href="anuncios.php">Anuncios</a>
-                <a href="blog.php">Blog</a>
-                <a href="contacto.php">Contato</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos Reservados 2023 &copy; </p>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-</html>
