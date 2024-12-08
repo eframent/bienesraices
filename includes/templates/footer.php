@@ -10,12 +10,14 @@
 
         <?php
             $fecha = date('Y');
+            $base_url = '/bienesraices/';
 
         ?>
 
         <p class="copyright">Todos los derechos Reservados <?php echo $fecha ?>  &copy; </p>
     </footer>
 
-    <script src="build/js/bundle.min.js"></script>
+    <!-- <script src="build/js/bundle.min.js"></script> -->
+    <script src="<?php echo $base_url; ?>build/js/bundle.min.js"></script>
 </body>
 </html>

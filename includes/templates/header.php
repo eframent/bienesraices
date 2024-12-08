@@ -3,6 +3,7 @@
 if (!isset($inicio)) {
     $inicio = false;
 }
+$base_url = '/bienesraices/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,15 +19,19 @@ if (!isset($inicio)) {
 
             <div class="barra">
                 <a href="/bienesraices/index.php">
-                    <img src="build/img/logo.svg" alt="Logo Bienes Raices">
+                <img src="<?php echo $base_url; ?>build/img/logo.svg" alt="Logo Bienes Raices">
+                    
                 </a>  
                 
                 <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu reponsive">
+               
+                    <img src="<?php echo $base_url; ?>build/img/barras.svg" alt="icono menu reponsive">
+                    
                 </div>
 
                 <div class="derecha">
-                    <img src="build/img/dark-mode.svg" alt="" class="dark-mode-boton">
+                    
+                    <img src="<?php echo $base_url; ?>build/img/dark-mode.svg" alt="" class="dark-mode-boton">
                     <nav class="navegacion">
                         <a href="nosotros.php">Nosotros</a>
                         <a href="anuncios.php">Anuncios</a>
